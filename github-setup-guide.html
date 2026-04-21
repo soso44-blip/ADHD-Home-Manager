@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Setup Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#fdf7f2;font-family:'Nunito',sans-serif;color:#2c1f1f;padding:24px;max-width:600px;margin:0 auto;}
+  h1{font-family:'Fredoka One',cursive;font-size:26px;color:#c85f76;margin-bottom:6px;}
+  .sub{font-size:13px;color:#9e8585;font-weight:700;margin-bottom:28px;}
+  .step{background:#fff;border:1.5px solid rgba(0,0,0,0.08);border-radius:18px;padding:18px 20px;margin-bottom:14px;display:flex;gap:14px;align-items:flex-start;}
+  .num{background:linear-gradient(135deg,#7b5ea8,#c85f76);color:#fff;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;flex-shrink:0;margin-top:1px;}
+  .step-body{}
+  .step-title{font-weight:900;font-size:15px;margin-bottom:4px;color:#2c1f1f;}
+  .step-desc{font-size:13px;color:#9e8585;font-weight:700;line-height:1.6;}
+  .step-desc strong{color:#2c1f1f;}
+  .code{background:#fef3ec;border:1.5px solid rgba(212,146,42,0.25);border-radius:10px;padding:8px 12px;font-family:monospace;font-size:12px;color:#b87414;margin-top:8px;word-break:break-all;}
+  .tip{background:rgba(78,153,133,0.08);border:1.5px solid rgba(78,153,133,0.25);border-radius:14px;padding:14px 16px;margin-bottom:14px;font-size:13px;color:#4e9985;font-weight:700;line-height:1.6;}
+  .files{background:#fff;border:1.5px solid rgba(0,0,0,0.08);border-radius:14px;padding:14px 16px;margin-bottom:14px;}
+  .files-title{font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:#9e8585;margin-bottom:10px;}
+  .file-row{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid rgba(0,0,0,0.05);font-size:13px;font-weight:800;}
+  .file-row:last-child{border-bottom:none;}
+  .file-icon{font-size:18px;}
+  .file-name{flex:1;font-family:monospace;color:#2c1f1f;}
+  .file-note{font-size:11px;color:#9e8585;font-weight:700;}
+</style>
+</head>
+<body>
+  <h1>🚀 GitHub Pages Setup</h1>
+  <div class="sub">One-time setup · Takes about 10 minutes · Free forever</div>
+
+  <div class="tip">Once done, your customers get a simple link. It opens in Safari, works offline after the first visit, and installs to the Home Screen in 2 taps. No files, no apps needed.</div>
+
+  <div class="files">
+    <div class="files-title">Upload ALL these files to GitHub</div>
+    <div class="file-row"><span class="file-icon">🌙</span><span class="file-name">adhd-dark-final.html</span><span class="file-note">Dark version</span></div>
+    <div class="file-row"><span class="file-icon">☀️</span><span class="file-name">adhd-light-final.html</span><span class="file-note">Light version</span></div>
+    <div class="file-row"><span class="file-icon">⚙️</span><span class="file-name">sw-dark.js</span><span class="file-note">Offline engine (dark)</span></div>
+    <div class="file-row"><span class="file-icon">⚙️</span><span class="file-name">sw-light.js</span><span class="file-note">Offline engine (light)</span></div>
+    <div class="file-row"><span class="file-icon">📋</span><span class="file-name">manifest-dark.json</span><span class="file-note">App info (dark)</span></div>
+    <div class="file-row"><span class="file-icon">📋</span><span class="file-name">manifest-light.json</span><span class="file-note">App info (light)</span></div>
+    <div class="file-row"><span class="file-icon">🖼️</span><span class="file-name">icon-dark.png</span><span class="file-note">Home screen icon (dark)</span></div>
+    <div class="file-row"><span class="file-icon">🖼️</span><span class="file-name">icon-light.png</span><span class="file-note">Home screen icon (light)</span></div>
+  </div>
+
+  <div class="step"><div class="num">1</div><div class="step-body">
+    <div class="step-title">Create a free GitHub account</div>
+    <div class="step-desc">Go to <strong>github.com</strong> and sign up. Use any email — it's completely free.</div>
+  </div></div>
+
+  <div class="step"><div class="num">2</div><div class="step-body">
+    <div class="step-title">Create a new repository</div>
+    <div class="step-desc">Click the <strong>+</strong> icon (top right) → <strong>New repository</strong>. Name it <strong>adhd-manager</strong>. Tick <strong>"Add a README file"</strong>. Click <strong>Create repository</strong>.</div>
+  </div></div>
+
+  <div class="step"><div class="num">3</div><div class="step-body">
+    <div class="step-title">Upload all your files</div>
+    <div class="step-desc">Click <strong>Add file → Upload files</strong>. Drag all 8 files from the list above into the upload box. Scroll down and click <strong>Commit changes</strong>.</div>
+  </div></div>
+
+  <div class="step"><div class="num">4</div><div class="step-body">
+    <div class="step-title">Turn on GitHub Pages</div>
+    <div class="step-desc">Click <strong>Settings</strong> (top tabs) → scroll to <strong>Pages</strong> (left sidebar) → under "Branch" select <strong>main</strong> → click <strong>Save</strong>. Wait about 2 minutes.</div>
+  </div></div>
+
+  <div class="step"><div class="num">5</div><div class="step-body">
+    <div class="step-title">Get your links</div>
+    <div class="step-desc">Go back to Settings → Pages. You'll see your URL — it looks like this:
+      <div class="code">https://YOURNAME.github.io/adhd-manager/adhd-dark-final.html</div>
+      <div class="code">https://YOURNAME.github.io/adhd-manager/adhd-light-final.html</div>
+      These are the links you give to customers.
+    </div>
+  </div></div>
+
+  <div class="step"><div class="num">6</div><div class="step-body">
+    <div class="step-title">Test on your iPhone</div>
+    <div class="step-desc">Open the link in <strong>Safari</strong> → tap the <strong>Share button</strong> (box with arrow) → tap <strong>"Add to Home Screen"</strong> → tap <strong>Add</strong>. Open it from your home screen — it runs full screen with no browser bar. Go to Airplane Mode and open it again — it still works. ✅</div>
+  </div></div>
+
+  <div class="tip">💡 <strong>Important:</strong> The icon files (icon-dark.png and icon-light.png) need to be 512×512 PNG images. You can create them for free at <strong>canva.com</strong> — just make a 512×512 design with a brain emoji or your product name, download as PNG, and rename the files.</div>
+</body>
+</html>
