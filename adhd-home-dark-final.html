@@ -18,30 +18,30 @@
     });
   }
 </script>
-<title>ðŸ§  ADHD Home Manager â€” Dark</title>
+<title>🧠 ADHD Home Manager — Dark</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     ðŸŽ¨ COLOR PALETTE â€” DARK VERSION
+  /* ═══════════════════════════════════════════════════════════════════════════
+     🎨 COLOR PALETTE — DARK VERSION
      To change colors, edit ONLY the values inside :root { } below.
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+     ═══════════════════════════════════════════════════════════════════════════ */
   :root {
     --bg:       #0d0b1e;   /* Main background */
     --surface:  #1a1535;   /* Card background */
     --surface2: #231d45;   /* Hover / affirmation card */
-    --pink:     #ff6eb4;   /* Accent 1 â€” buttons, title */
-    --teal:     #00e5c8;   /* Accent 2 â€” low energy, success */
-    --yellow:   #ffd166;   /* Accent 3 â€” XP numbers */
-    --purple:   #c77dff;   /* Accent 4 â€” tabs, badges */
+    --pink:     #ff6eb4;   /* Accent 1 — buttons, title */
+    --teal:     #00e5c8;   /* Accent 2 — low energy, success */
+    --yellow:   #ffd166;   /* Accent 3 — XP numbers */
+    --purple:   #c77dff;   /* Accent 4 — tabs, badges */
     --text:     #f0e6ff;   /* Primary text */
     --muted:    #9080b8;   /* Hint text */
     --border:   rgba(255,255,255,0.08);
   }
-  /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+  /* ═══════════════════════════════════════════════════════════════════════════ */
 
   .orb1 { width:400px;height:400px;background:var(--purple);top:-150px;right:-150px; }
   .orb2 { width:300px;height:300px;background:var(--teal);bottom:100px;left:-120px; }
@@ -247,7 +247,7 @@
   .footer-pad { height: 30px; }
 
 
-  /* â”€â”€ LEGEND MODE GLOBAL â”€â”€ */
+  /* ── LEGEND MODE GLOBAL ── */
   .legend-shimmer-bar {
     position: absolute; top: 0; left: 0; right: 0; height: 3px;
     background: linear-gradient(90deg, #ffd700, #ffb800, #fff0a0, #ffd700, #ffb800);
@@ -344,26 +344,26 @@
 
 <div class="stats-overlay hidden" id="statsOverlay" onclick="closeStats(event)">
   <div class="stats-sheet">
-    <div class="stats-title">âœ¨ Your Journey</div>
+    <div class="stats-title">✨ Your Journey</div>
     <div class="stats-grid">
       <div class="stat-card"><div class="stat-num" style="color:var(--yellow)" id="statXP">0</div><div class="stat-label">Total XP</div></div>
       <div class="stat-card"><div class="stat-num" style="color:var(--pink)" id="statStreak">0</div><div class="stat-label">Day Streak</div></div>
       <div class="stat-card"><div class="stat-num" style="color:var(--teal)" id="statLevel">1</div><div class="stat-label">Level</div></div>
     </div>
     <div class="level-journey" id="levelJourney"></div>
-    <button class="close-btn" onclick="document.getElementById('statsOverlay').classList.add('hidden')">Close âœ•</button>
+    <button class="close-btn" onclick="document.getElementById('statsOverlay').classList.add('hidden')">Close ✕</button>
   </div>
 </div>
 
 <header class="header">
   <div class="legend-shimmer-bar" id="legendShimmerBar"></div>
   <div class="header-top">
-    <div class="app-title">ðŸ§  ADHD Home Manager</div>
-    <button class="streak-pill" onclick="openStats()" id="streakPill">ðŸ”¥ 0 day streak</button>
+    <div class="app-title">🧠 ADHD Home Manager</div>
+    <button class="streak-pill" onclick="openStats()" id="streakPill">🔥 0 day streak</button>
   </div>
   <div class="level-row">
     <div class="level-badge" id="levelBadge">LVL 1</div>
-    <div class="level-name" id="levelName">ðŸŒ± Home Apprentice</div>
+    <div class="level-name" id="levelName">🌱 Home Apprentice</div>
     <div class="xp-display" id="xpDisplay">0 / 100 XP</div>
   </div>
   <div class="xp-track"><div class="xp-fill" id="xpFill" style="width:0%"></div></div>
@@ -373,43 +373,43 @@
 
   <!-- LEGEND BANNER (hidden until XP >= 3000) -->
   <div class="legend-banner" id="legendBanner" style="display:none;">
-    <div class="legend-crown">ðŸ‘‘</div>
+    <div class="legend-crown">👑</div>
     <div class="legend-info">
-      <div class="legend-title">Legend Mode â€” You're Infinite</div>
+      <div class="legend-title">Legend Mode — You're Infinite</div>
       <div class="legend-sub">
-        <span id="legendXPTotal">0</span> XP earned total Â·
+        <span id="legendXPTotal">0</span> XP earned total ·
         <strong id="legendToNext">100</strong> XP to next milestone
         (<span id="legendNextM">3100</span>)
       </div>
     </div>
-    <div class="legend-flame">ðŸ”¥</div>
+    <div class="legend-flame">🔥</div>
   </div>
 
   <div class="affirm-wrap">
     <div class="affirm-card">
-      <div class="affirm-icon" id="affirmIcon">ðŸ’œ</div>
+      <div class="affirm-icon" id="affirmIcon">💜</div>
       <div class="affirm-text">
         <div class="affirm-quote" id="affirmQuote">You are doing better than you think.</div>
-        <div class="affirm-tap">Tap â†» for a new reminder</div>
+        <div class="affirm-tap">Tap ↻ for a new reminder</div>
       </div>
-      <button class="affirm-refresh" onclick="nextAffirmation()" id="affirmRefresh">â†»</button>
+      <button class="affirm-refresh" onclick="nextAffirmation()" id="affirmRefresh">↻</button>
     </div>
   </div>
 
   <div class="energy-section">
-    <div class="section-label">ðŸ”‹ Today I feel...</div>
+    <div class="section-label">🔋 Today I feel...</div>
     <div class="energy-grid">
-      <button class="energy-btn low" onclick="setEnergy('low')" id="btnLow"><span class="energy-icon">ðŸª«</span><span class="energy-label">Low Energy</span><span class="energy-sub">2â€“5 min tasks</span></button>
-      <button class="energy-btn medium active" onclick="setEnergy('medium')" id="btnMedium"><span class="energy-icon">âš¡</span><span class="energy-label">Medium</span><span class="energy-sub">Up to 15 min</span></button>
-      <button class="energy-btn high" onclick="setEnergy('high')" id="btnHigh"><span class="energy-icon">ðŸ”¥</span><span class="energy-label">High Energy</span><span class="energy-sub">Full power!</span></button>
+      <button class="energy-btn low" onclick="setEnergy('low')" id="btnLow"><span class="energy-icon">🪫</span><span class="energy-label">Low Energy</span><span class="energy-sub">2–5 min tasks</span></button>
+      <button class="energy-btn medium active" onclick="setEnergy('medium')" id="btnMedium"><span class="energy-icon">⚡</span><span class="energy-label">Medium</span><span class="energy-sub">Up to 15 min</span></button>
+      <button class="energy-btn high" onclick="setEnergy('high')" id="btnHigh"><span class="energy-icon">🔥</span><span class="energy-label">High Energy</span><span class="energy-sub">Full power!</span></button>
     </div>
   </div>
-  <div class="mvd-banner" id="mvdBanner">ðŸŒ¿ Minimum Viable Day â€” Do what you can. That's enough. No guilt here.</div>
+  <div class="mvd-banner" id="mvdBanner">🌿 Minimum Viable Day — Do what you can. That's enough. No guilt here.</div>
 
   <div class="tabs">
-    <button class="tab-btn active" id="tabTasks" onclick="switchTab('tasks')">âœ… Today</button>
-    <button class="tab-btn" id="tabEmergency" onclick="switchTab('emergency')">ðŸš¨ Emergency</button>
-    <button class="tab-btn" id="tabCustom" onclick="switchTab('custom')">âœï¸ My Tasks</button>
+    <button class="tab-btn active" id="tabTasks" onclick="switchTab('tasks')">✅ Today</button>
+    <button class="tab-btn" id="tabEmergency" onclick="switchTab('emergency')">🚨 Emergency</button>
+    <button class="tab-btn" id="tabCustom" onclick="switchTab('custom')">✏️ My Tasks</button>
   </div>
 
   <div class="progress-row">
@@ -419,8 +419,8 @@
     </div>
     <div class="progress-num" id="progressFrac">0/0</div>
     <div style="display:flex;flex-direction:column;gap:5px;align-items:flex-end;">
-      <button class="new-day-btn" onclick="newDay()">ðŸŒ™ New Day</button>
-      <button id="restoreBtn" onclick="restoreAllTasks()" style="display:none;background:rgba(0,229,200,0.1);border:1.5px solid rgba(0,229,200,0.3);color:var(--teal);border-radius:10px;padding:4px 10px;font-family:'Nunito',sans-serif;font-weight:800;font-size:11px;cursor:pointer;white-space:nowrap;outline:none;">â†© Restore tasks</button>
+      <button class="new-day-btn" onclick="newDay()">🌙 New Day</button>
+      <button id="restoreBtn" onclick="restoreAllTasks()" style="display:none;background:rgba(0,229,200,0.1);border:1.5px solid rgba(0,229,200,0.3);color:var(--teal);border-radius:10px;padding:4px 10px;font-family:'Nunito',sans-serif;font-weight:800;font-size:11px;cursor:pointer;white-space:nowrap;outline:none;">↩ Restore tasks</button>
     </div>
   </div>
 
@@ -433,13 +433,13 @@
 
   <div class="custom-panel hidden" id="customPanel">
     <div class="builder-card">
-      <div class="builder-title">âœï¸ Build Your Own Task</div>
+      <div class="builder-title">✏️ Build Your Own Task</div>
       <div class="field-row">
         <div class="field-label">Choose an icon</div>
         <div class="emoji-grid" id="emojiGrid"></div>
         <div class="emoji-custom-row">
           <span class="emoji-custom-label">Or paste your own emoji:</span>
-          <input class="emoji-custom-input" id="emojiCustom" maxlength="2" placeholder="ðŸŽ¯" oninput="onCustomEmoji(this.value)" />
+          <input class="emoji-custom-input" id="emojiCustom" maxlength="2" placeholder="🎯" oninput="onCustomEmoji(this.value)" />
         </div>
       </div>
       <div class="field-row">
@@ -449,17 +449,17 @@
       <div class="field-row">
         <div class="field-label">Energy needed</div>
         <div class="energy-pick-row">
-          <button class="energy-pick-btn low sel" id="epLow" onclick="pickEnergy('low')">ðŸª« Low</button>
-          <button class="energy-pick-btn medium" id="epMedium" onclick="pickEnergy('medium')">âš¡ Medium</button>
-          <button class="energy-pick-btn high" id="epHigh" onclick="pickEnergy('high')">ðŸ”¥ High</button>
+          <button class="energy-pick-btn low sel" id="epLow" onclick="pickEnergy('low')">🪫 Low</button>
+          <button class="energy-pick-btn medium" id="epMedium" onclick="pickEnergy('medium')">⚡ Medium</button>
+          <button class="energy-pick-btn high" id="epHigh" onclick="pickEnergy('high')">🔥 High</button>
         </div>
       </div>
       <div class="field-row">
         <div class="field-label">How often?</div>
         <div class="freq-pick-row">
-          <button class="freq-pick-btn daily sel" id="fpDaily" onclick="pickFreq('daily')">â˜€ï¸ Daily</button>
-          <button class="freq-pick-btn weekly" id="fpWeekly" onclick="pickFreq('weekly')">ðŸ”„ Weekly</button>
-          <button class="freq-pick-btn monthly" id="fpMonthly" onclick="pickFreq('monthly')">ðŸ“… Monthly</button>
+          <button class="freq-pick-btn daily sel" id="fpDaily" onclick="pickFreq('daily')">☀️ Daily</button>
+          <button class="freq-pick-btn weekly" id="fpWeekly" onclick="pickFreq('weekly')">🔄 Weekly</button>
+          <button class="freq-pick-btn monthly" id="fpMonthly" onclick="pickFreq('monthly')">📅 Monthly</button>
         </div>
       </div>
       <div class="field-row">
@@ -468,7 +468,7 @@
         <input class="builder-input" id="catCustomInput" placeholder="Or type a new category..." maxlength="30" oninput="onCustomCat(this.value)" style="margin-top:8px;" />
       </div>
       <div class="field-row">
-        <div class="field-label">XP reward â€” how big is this task?</div>
+        <div class="field-label">XP reward — how big is this task?</div>
         <div class="xp-row">
           <input type="range" class="xp-slider" id="xpSlider" min="5" max="50" step="5" value="10" oninput="document.getElementById('xpValDisplay').textContent=this.value+' XP'" />
           <div class="xp-val" id="xpValDisplay">10 XP</div>
@@ -489,43 +489,43 @@
 
 <div id="installBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:500;padding:16px 20px 28px;background:var(--surface);border-top:1px solid var(--border);animation:slideUp 0.4s ease;">
   <div style="display:flex;align-items:flex-start;gap:12px;max-width:480px;margin:0 auto;">
-    <div style="font-size:32px;flex-shrink:0;line-height:1;">ðŸ“²</div>
+    <div style="font-size:32px;flex-shrink:0;line-height:1;">📲</div>
     <div style="flex:1;">
       <div style="font-weight:900;font-size:15px;color:var(--text);margin-bottom:3px;">Add to your Home Screen</div>
-      <div style="font-size:12px;color:var(--muted);font-weight:700;line-height:1.5;">Tap the <strong style="color:var(--text);">Share button</strong> below, then <strong style="color:var(--text);">"Add to Home Screen"</strong> â€” works like a real app, fully offline after this first visit.</div>
+      <div style="font-size:12px;color:var(--muted);font-weight:700;line-height:1.5;">Tap the <strong style="color:var(--text);">Share button</strong> below, then <strong style="color:var(--text);">"Add to Home Screen"</strong> — works like a real app, fully offline after this first visit.</div>
     </div>
-    <button onclick="dismissBanner()" style="background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;padding:0;line-height:1;flex-shrink:0;">âœ•</button>
+    <button onclick="dismissBanner()" style="background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;padding:0;line-height:1;flex-shrink:0;">✕</button>
   </div>
 </div>
 <script>
 
-// â”€â”€ AFFIRMATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── AFFIRMATIONS ──────────────────────────────────────────────────────────────
 const AFFIRMATIONS=[
-  {icon:"ðŸ’œ",text:"You don't have to do it all. You just have to start."},
-  {icon:"ðŸŒ¿",text:"A messy house with a functioning human in it is a win."},
-  {icon:"âœ¨",text:"Done is better than perfect. Always."},
-  {icon:"ðŸ”¥",text:"You've survived every hard day so far. Today is no different."},
-  {icon:"ðŸ§ ",text:"Your brain works differently â€” not broken, just different."},
-  {icon:"ðŸŒŠ",text:"Low energy days are part of the cycle, not a personal failure."},
-  {icon:"ðŸŽ¯",text:"One small thing completed is infinitely more than zero things."},
-  {icon:"ðŸ«¶",text:"You are allowed to rest without earning it first."},
-  {icon:"ðŸŒ±",text:"Progress looks different every day. That's okay."},
-  {icon:"âš¡",text:"Imperfect action beats perfect inaction every time."},
-  {icon:"ðŸŒŸ",text:"The fact that you opened this app today means something. Really."},
-  {icon:"ðŸ’¡",text:"Your worth is not measured by how clean your home is."},
-  {icon:"ðŸŽ‰",text:"Showing up for yourself â€” even a little â€” counts as showing up."},
-  {icon:"ðŸŒ¸",text:"Be as kind to yourself as you would be to a friend."},
-  {icon:"ðŸš€",text:"You don't need to feel motivated to take action. Action creates motivation."},
-  {icon:"ðŸ›‹ï¸",text:"Rest is not laziness. Rest is maintenance."},
-  {icon:"ðŸŒˆ",text:"You are not behind. You are exactly where you are."},
-  {icon:"ðŸ’Ž",text:"Hard days don't erase good ones. Your streak is still real."},
-  {icon:"ðŸ¤",text:"Forgetting doesn't mean failing. You can always begin again."},
-  {icon:"ðŸ¦‹",text:"Every tiny win rewires your brain for the next one. Keep going."},
-  {icon:"ðŸŽ®",text:"This is not a productivity race. It's a life, and you're living it."},
-  {icon:"ðŸŒ™",text:"What you did today was enough. What you do tomorrow can be more."},
-  {icon:"ðŸ’ª",text:"Your ADHD brain also means creativity, passion, and depth. Own it."},
-  {icon:"ðŸ§©",text:"You are not the problem to be solved. You are the whole person."},
-  {icon:"â˜€ï¸",text:"A new day is a genuine fresh start â€” not a metaphor, an actual one."},
+  {icon:"💜",text:"You don't have to do it all. You just have to start."},
+  {icon:"🌿",text:"A messy house with a functioning human in it is a win."},
+  {icon:"✨",text:"Done is better than perfect. Always."},
+  {icon:"🔥",text:"You've survived every hard day so far. Today is no different."},
+  {icon:"🧠",text:"Your brain works differently — not broken, just different."},
+  {icon:"🌊",text:"Low energy days are part of the cycle, not a personal failure."},
+  {icon:"🎯",text:"One small thing completed is infinitely more than zero things."},
+  {icon:"🫶",text:"You are allowed to rest without earning it first."},
+  {icon:"🌱",text:"Progress looks different every day. That's okay."},
+  {icon:"⚡",text:"Imperfect action beats perfect inaction every time."},
+  {icon:"🌟",text:"The fact that you opened this app today means something. Really."},
+  {icon:"💡",text:"Your worth is not measured by how clean your home is."},
+  {icon:"🎉",text:"Showing up for yourself — even a little — counts as showing up."},
+  {icon:"🌸",text:"Be as kind to yourself as you would be to a friend."},
+  {icon:"🚀",text:"You don't need to feel motivated to take action. Action creates motivation."},
+  {icon:"🛋️",text:"Rest is not laziness. Rest is maintenance."},
+  {icon:"🌈",text:"You are not behind. You are exactly where you are."},
+  {icon:"💎",text:"Hard days don't erase good ones. Your streak is still real."},
+  {icon:"🤍",text:"Forgetting doesn't mean failing. You can always begin again."},
+  {icon:"🦋",text:"Every tiny win rewires your brain for the next one. Keep going."},
+  {icon:"🎮",text:"This is not a productivity race. It's a life, and you're living it."},
+  {icon:"🌙",text:"What you did today was enough. What you do tomorrow can be more."},
+  {icon:"💪",text:"Your ADHD brain also means creativity, passion, and depth. Own it."},
+  {icon:"🧩",text:"You are not the problem to be solved. You are the whole person."},
+  {icon:"☀️",text:"A new day is a genuine fresh start — not a metaphor, an actual one."},
 ];
 let affirmIndex=0;
 function pickTodayAffirmation(){
@@ -544,7 +544,7 @@ function nextAffirmation(){
   btn.addEventListener("animationend",()=>btn.classList.remove("spin"),{once:true});
 }
 
-// â”€â”€ FREQUENCY HELPERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── FREQUENCY HELPERS ─────────────────────────────────────────────────────────
 function todayStr(){return new Date().toISOString().split("T")[0];}
 function daysSince(d){if(!d)return 9999;return Math.floor((Date.now()-new Date(d))/86400000);}
 function isDone(task){
@@ -564,87 +564,87 @@ function freqLabel(freq){
   return "";
 }
 
-// â”€â”€ LEVELS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── LEVELS ────────────────────────────────────────────────────────────────────
 const LEVELS=[
-  {level:1,name:"Home Apprentice",minXP:0,emoji:"ðŸŒ±"},
-  {level:2,name:"Task Starter",minXP:100,emoji:"ðŸŒ¿"},
-  {level:3,name:"Routine Builder",minXP:250,emoji:"ðŸŒ²"},
-  {level:4,name:"Chaos Tamer",minXP:450,emoji:"âš¡"},
-  {level:5,name:"Momentum Master",minXP:700,emoji:"ðŸ”¥"},
-  {level:6,name:"Home Hero",minXP:1000,emoji:"âœ¨"},
-  {level:7,name:"Daily Legend",minXP:1400,emoji:"ðŸŒŸ"},
-  {level:8,name:"Flow State Wizard",minXP:1850,emoji:"ðŸ§™"},
-  {level:9,name:"Executive Champion",minXP:2350,emoji:"ðŸ‘‘"},
-  {level:10,name:"ADHD Overlord",minXP:3000,emoji:"ðŸ†"},
+  {level:1,name:"Home Apprentice",minXP:0,emoji:"🌱"},
+  {level:2,name:"Task Starter",minXP:100,emoji:"🌿"},
+  {level:3,name:"Routine Builder",minXP:250,emoji:"🌲"},
+  {level:4,name:"Chaos Tamer",minXP:450,emoji:"⚡"},
+  {level:5,name:"Momentum Master",minXP:700,emoji:"🔥"},
+  {level:6,name:"Home Hero",minXP:1000,emoji:"✨"},
+  {level:7,name:"Daily Legend",minXP:1400,emoji:"🌟"},
+  {level:8,name:"Flow State Wizard",minXP:1850,emoji:"🧙"},
+  {level:9,name:"Executive Champion",minXP:2350,emoji:"👑"},
+  {level:10,name:"ADHD Overlord",minXP:3000,emoji:"🏆"},
 ];
 
-// â”€â”€ TASK TEMPLATES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── TASK TEMPLATES ────────────────────────────────────────────────────────────
 const TASK_TEMPLATES=[
-  {id:1, name:"Drink a full glass of water",   icon:"ðŸ¥¤",xp:5, energy:"low",   cat:"Self Care",freq:"daily"},
-  {id:2, name:"Take medication",               icon:"ðŸ’Š",xp:10,energy:"low",   cat:"Self Care",freq:"daily"},
-  {id:3, name:"Brush teeth",                   icon:"ðŸ¦·",xp:5, energy:"low",   cat:"Self Care",freq:"daily"},
-  {id:4, name:"Get dressed (anything counts)", icon:"ðŸ‘•",xp:8, energy:"low",   cat:"Self Care",freq:"daily"},
-  {id:5, name:"Pull up bed covers",            icon:"ðŸ›ï¸",xp:5, energy:"low",   cat:"Bedroom",  freq:"daily"},
-  {id:6, name:"Put dishes in the sink",        icon:"ðŸ½ï¸",xp:5, energy:"low",   cat:"Kitchen",  freq:"daily"},
-  {id:8, name:"Open blinds or a window",       icon:"â˜€ï¸",xp:5, energy:"low",   cat:"Self Care",freq:"daily"},
-  {id:11,name:"Do the dishes",                 icon:"ðŸ§¼",xp:15,energy:"medium",cat:"Kitchen",  freq:"daily"},
-  {id:14,name:"Prep a simple meal",            icon:"ðŸ¥—",xp:20,energy:"medium",cat:"Kitchen",  freq:"daily"},
-  {id:16,name:"Reply to 3 messages",           icon:"ðŸ“±",xp:15,energy:"medium",cat:"Admin",    freq:"daily"},
-  {id:7, name:"Empty all trash cans",          icon:"ðŸ—‘ï¸",xp:8, energy:"low",   cat:"Home",     freq:"weekly"},
-  {id:9, name:"Put a load in the washer",      icon:"ðŸ§º",xp:8, energy:"low",   cat:"Laundry",  freq:"weekly"},
-  {id:10,name:"Tidy one cluttered surface",    icon:"ðŸª£",xp:8, energy:"low",   cat:"Home",     freq:"weekly"},
-  {id:12,name:"Quick vacuum of main area",     icon:"ðŸŒ€",xp:20,energy:"medium",cat:"Home",     freq:"weekly"},
-  {id:13,name:"Clean bathroom sink",           icon:"ðŸª¥",xp:15,energy:"medium",cat:"Bathroom", freq:"weekly"},
-  {id:15,name:"Switch laundry",                icon:"ðŸ‘—",xp:15,energy:"medium",cat:"Laundry",  freq:"weekly"},
-  {id:17,name:"Wipe down countertops",         icon:"ðŸ§½",xp:12,energy:"medium",cat:"Kitchen",  freq:"weekly"},
-  {id:18,name:"Clear one cluttered area",      icon:"ðŸ“¦",xp:15,energy:"medium",cat:"Home",     freq:"weekly"},
-  {id:19,name:"Take out the trash",            icon:"ðŸš®",xp:12,energy:"medium",cat:"Home",     freq:"weekly"},
-  {id:21,name:"Cook a proper meal",            icon:"ðŸ³",xp:35,energy:"high",  cat:"Kitchen",  freq:"weekly"},
-  {id:22,name:"Grocery run",                   icon:"ðŸ›’",xp:50,energy:"high",  cat:"Admin",    freq:"weekly"},
-  {id:25,name:"Handle important emails",       icon:"ðŸ“§",xp:30,energy:"high",  cat:"Admin",    freq:"weekly"},
-  {id:20,name:"Full bathroom clean",           icon:"ðŸ›",xp:40,energy:"high",  cat:"Bathroom", freq:"monthly"},
-  {id:23,name:"Organize papers / mail",        icon:"ðŸ“",xp:30,energy:"high",  cat:"Admin",    freq:"monthly"},
-  {id:24,name:"Mop or scrub floors",           icon:"ðŸ§¹",xp:45,energy:"high",  cat:"Home",     freq:"monthly"},
-  {id:26,name:"Deep clean the kitchen",        icon:"âœ¨",xp:45,energy:"high",  cat:"Kitchen",  freq:"monthly"},
-  {id:27,name:"Wash bedding",                  icon:"ðŸ›Œ",xp:35,energy:"high",  cat:"Bedroom",  freq:"monthly"},
+  {id:1, name:"Drink a full glass of water",   icon:"🥤",xp:5, energy:"low",   cat:"Self Care",freq:"daily"},
+  {id:2, name:"Take medication",               icon:"💊",xp:10,energy:"low",   cat:"Self Care",freq:"daily"},
+  {id:3, name:"Brush teeth",                   icon:"🦷",xp:5, energy:"low",   cat:"Self Care",freq:"daily"},
+  {id:4, name:"Get dressed (anything counts)", icon:"👕",xp:8, energy:"low",   cat:"Self Care",freq:"daily"},
+  {id:5, name:"Pull up bed covers",            icon:"🛏️",xp:5, energy:"low",   cat:"Bedroom",  freq:"daily"},
+  {id:6, name:"Put dishes in the sink",        icon:"🍽️",xp:5, energy:"low",   cat:"Kitchen",  freq:"daily"},
+  {id:8, name:"Open blinds or a window",       icon:"☀️",xp:5, energy:"low",   cat:"Self Care",freq:"daily"},
+  {id:11,name:"Do the dishes",                 icon:"🧼",xp:15,energy:"medium",cat:"Kitchen",  freq:"daily"},
+  {id:14,name:"Prep a simple meal",            icon:"🥗",xp:20,energy:"medium",cat:"Kitchen",  freq:"daily"},
+  {id:16,name:"Reply to 3 messages",           icon:"📱",xp:15,energy:"medium",cat:"Admin",    freq:"daily"},
+  {id:7, name:"Empty all trash cans",          icon:"🗑️",xp:8, energy:"low",   cat:"Home",     freq:"weekly"},
+  {id:9, name:"Put a load in the washer",      icon:"🧺",xp:8, energy:"low",   cat:"Laundry",  freq:"weekly"},
+  {id:10,name:"Tidy one cluttered surface",    icon:"🪣",xp:8, energy:"low",   cat:"Home",     freq:"weekly"},
+  {id:12,name:"Quick vacuum of main area",     icon:"🌀",xp:20,energy:"medium",cat:"Home",     freq:"weekly"},
+  {id:13,name:"Clean bathroom sink",           icon:"🪥",xp:15,energy:"medium",cat:"Bathroom", freq:"weekly"},
+  {id:15,name:"Switch laundry",                icon:"👗",xp:15,energy:"medium",cat:"Laundry",  freq:"weekly"},
+  {id:17,name:"Wipe down countertops",         icon:"🧽",xp:12,energy:"medium",cat:"Kitchen",  freq:"weekly"},
+  {id:18,name:"Clear one cluttered area",      icon:"📦",xp:15,energy:"medium",cat:"Home",     freq:"weekly"},
+  {id:19,name:"Take out the trash",            icon:"🚮",xp:12,energy:"medium",cat:"Home",     freq:"weekly"},
+  {id:21,name:"Cook a proper meal",            icon:"🍳",xp:35,energy:"high",  cat:"Kitchen",  freq:"weekly"},
+  {id:22,name:"Grocery run",                   icon:"🛒",xp:50,energy:"high",  cat:"Admin",    freq:"weekly"},
+  {id:25,name:"Handle important emails",       icon:"📧",xp:30,energy:"high",  cat:"Admin",    freq:"weekly"},
+  {id:20,name:"Full bathroom clean",           icon:"🛁",xp:40,energy:"high",  cat:"Bathroom", freq:"monthly"},
+  {id:23,name:"Organize papers / mail",        icon:"📁",xp:30,energy:"high",  cat:"Admin",    freq:"monthly"},
+  {id:24,name:"Mop or scrub floors",           icon:"🧹",xp:45,energy:"high",  cat:"Home",     freq:"monthly"},
+  {id:26,name:"Deep clean the kitchen",        icon:"✨",xp:45,energy:"high",  cat:"Kitchen",  freq:"monthly"},
+  {id:27,name:"Wash bedding",                  icon:"🛌",xp:35,energy:"high",  cat:"Bedroom",  freq:"monthly"},
 ];
 
 const EMERGENCY_RESETS=[
-  {id:"e1",name:"Reset Kitchen",  icon:"ðŸ³",time:"15 min",xp:25,color:"#ff6eb4"},
-  {id:"e2",name:"Clear 5 Items",  icon:"ðŸ—‘ï¸",time:"2 min", xp:10,color:"#00e5c8"},
-  {id:"e3",name:"Shower + Reset", icon:"ðŸš¿",time:"15 min",xp:30,color:"#c77dff"},
-  {id:"e4",name:"Desk Rescue",    icon:"ðŸ–¥ï¸",time:"5 min", xp:15,color:"#ffd166"},
-  {id:"e5",name:"Bed Reset",      icon:"ðŸ›ï¸",time:"3 min", xp:10,color:"#74d7c4"},
-  {id:"e6",name:"Brain Dump",     icon:"ðŸ“",time:"5 min", xp:15,color:"#ff9a9a"},
+  {id:"e1",name:"Reset Kitchen",  icon:"🍳",time:"15 min",xp:25,color:"#ff6eb4"},
+  {id:"e2",name:"Clear 5 Items",  icon:"🗑️",time:"2 min", xp:10,color:"#00e5c8"},
+  {id:"e3",name:"Shower + Reset", icon:"🚿",time:"15 min",xp:30,color:"#c77dff"},
+  {id:"e4",name:"Desk Rescue",    icon:"🖥️",time:"5 min", xp:15,color:"#ffd166"},
+  {id:"e5",name:"Bed Reset",      icon:"🛏️",time:"3 min", xp:10,color:"#74d7c4"},
+  {id:"e6",name:"Brain Dump",     icon:"📝",time:"5 min", xp:15,color:"#ff9a9a"},
 ];
 
 const LEGEND_MILESTONE_MSGS=[
-  ["ðŸ”¥ Still going!","Most people quit. You didn't. Ever."],
-  ["âš¡ Unstoppable!","Your consistency is genuinely rare."],
-  ["âœ¨ Legendary!","Your home thanks you. Your future self thanks you."],
-  ["ðŸ’Ž Diamond level!","You've built something most people only dream about."],
-  ["ðŸŒŸ Mythic!","At this point you're just showing off. We love it."],
-  ["ðŸš€ Beyond legendary!","You have broken the system. In the best way."],
-  ["ðŸ‘‘ Royalty tier!","Bowing down. Seriously."],
-  ["ðŸŽ¯ Precision legend!","Every win compounds. Look how far you've come."],
-  ["ðŸŒˆ Infinite mode!","You are the main character of your own life."],
-  ["ðŸ… Hall of Fame!","If there were a trophy, you'd have earned it 10 times over."],
+  ["🔥 Still going!","Most people quit. You didn't. Ever."],
+  ["⚡ Unstoppable!","Your consistency is genuinely rare."],
+  ["✨ Legendary!","Your home thanks you. Your future self thanks you."],
+  ["💎 Diamond level!","You've built something most people only dream about."],
+  ["🌟 Mythic!","At this point you're just showing off. We love it."],
+  ["🚀 Beyond legendary!","You have broken the system. In the best way."],
+  ["👑 Royalty tier!","Bowing down. Seriously."],
+  ["🎯 Precision legend!","Every win compounds. Look how far you've come."],
+  ["🌈 Infinite mode!","You are the main character of your own life."],
+  ["🏅 Hall of Fame!","If there were a trophy, you'd have earned it 10 times over."],
 ];
 
-const CEL_MESSAGES=["Nice one! ðŸŽ‰","You did it! âš¡","Look at you go! âœ¨","Boom! ðŸ’¥","That counts! ðŸŒŸ","Small win, BIG deal! ðŸ†","You're amazing! ðŸ«¶","Smashing it! ðŸ”¥","Progress! ðŸš€","YES! ðŸ’ª"];
-const PRESET_EMOJIS=["ðŸƒ","ðŸ§˜","ðŸ“š","ðŸŽ¨","ðŸŒ¿","ðŸ¾","ðŸ›’","ðŸ’Œ","ðŸŽ¯","ðŸ§¹","ðŸª´","ðŸŽ¸","ðŸµ","ðŸ’»","ðŸ§","ðŸ“ž","âœ‰ï¸","ðŸ—“ï¸","ðŸ’†","ðŸŽ®"];
+const CEL_MESSAGES=["Nice one! 🎉","You did it! ⚡","Look at you go! ✨","Boom! 💥","That counts! 🌟","Small win, BIG deal! 🏆","You're amazing! 🫶","Smashing it! 🔥","Progress! 🚀","YES! 💪"];
+const PRESET_EMOJIS=["🏃","🧘","📚","🎨","🌿","🐾","🛒","💌","🎯","🧹","🪴","🎸","🍵","💻","🧁","📞","✉️","🗓️","💆","🎮"];
 const PRESET_CATS=["Self Care","Kitchen","Home","Bedroom","Bathroom","Laundry","Admin","Work","Health","Other"];
 
-// â”€â”€ STATE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── STATE ─────────────────────────────────────────────────────────────────────
 let state={
   xp:0, streak:0, lastDate:null, energy:"medium",
   tasks:TASK_TEMPLATES.map(t=>({...t,done:false,lastDone:null})),
   customTasks:[], emergencyDone:[], deletedTaskIds:[],
   lastMilestoneCelebrated:3000,
 };
-let builderEmoji="ðŸŽ¯", builderEnergy="low", builderCat="Home", builderFreq="daily";
+let builderEmoji="🎯", builderEnergy="low", builderCat="Home", builderFreq="daily";
 
-// â”€â”€ PERSISTENCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── PERSISTENCE ───────────────────────────────────────────────────────────────
 function saveState(){try{localStorage.setItem("adhd_v5",JSON.stringify(state));}catch(e){}}
 function loadState(){
   try{
@@ -667,7 +667,7 @@ function loadState(){
   }catch(e){}
 }
 
-// â”€â”€ LEGEND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── LEGEND ────────────────────────────────────────────────────────────────────
 function isLegend(){return state.xp>=3000;}
 function getLegendMilestone(){return Math.ceil((state.xp+1)/100)*100;}
 function checkLegendMilestones(xpB,xpA){
@@ -679,12 +679,12 @@ function checkLegendMilestones(xpB,xpA){
   state.lastMilestoneCelebrated=milestone;
   const idx=Math.floor((milestone-3100)/100)%LEGEND_MILESTONE_MSGS.length;
   const [t2,s2]=LEGEND_MILESTONE_MSGS[idx];
-  showLegendCelebration(milestone,t2,`${milestone-3000} XP above max â€” ${s2}`);
+  showLegendCelebration(milestone,t2,`${milestone-3000} XP above max — ${s2}`);
   return true;
 }
 function showLegendCelebration(milestone,title,sub){
   const o=document.getElementById("celebrationOverlay"),p=document.getElementById("celebrationPopup");
-  document.getElementById("celXP").innerHTML=`<span style="font-size:42px">ðŸ‘‘</span><br>${milestone} XP`;
+  document.getElementById("celXP").innerHTML=`<span style="font-size:42px">👑</span><br>${milestone} XP`;
   document.getElementById("celMsg").textContent=title;
   document.getElementById("celSub").textContent=sub;
   p.className="celebration-popup legend-cel";
@@ -706,7 +706,7 @@ function applyLegendMode(){
   }else{banner.style.display="none";}
 }
 
-// â”€â”€ LEVEL HELPERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── LEVEL HELPERS ─────────────────────────────────────────────────────────────
 function getLevel(xp){let c=LEVELS[0];for(const l of LEVELS){if(xp>=l.minXP)c=l;else break;}return c;}
 function getNextLevel(xp){const c=getLevel(xp);return LEVELS.find(l=>l.level===c.level+1)||null;}
 function getLevelProgress(xp){
@@ -716,21 +716,21 @@ function getLevelProgress(xp){
   return Math.min(100,Math.round(((xp-c.minXP)/(n.minXP-c.minXP))*100));
 }
 
-// â”€â”€ RENDER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── RENDER ────────────────────────────────────────────────────────────────────
 function renderHeader(){
   if(isLegend()){
     const nM=getLegendMilestone(),tn=nM-state.xp;
-    document.getElementById("levelBadge").innerHTML="ðŸ† LEGEND";
-    document.getElementById("levelName").textContent="ADHD Overlord â€” Legend Mode ðŸ‘‘";
-    document.getElementById("xpDisplay").textContent=state.xp.toLocaleString()+" XP Â· "+tn+" to next milestone";
+    document.getElementById("levelBadge").innerHTML="🏆 LEGEND";
+    document.getElementById("levelName").textContent="ADHD Overlord — Legend Mode 👑";
+    document.getElementById("xpDisplay").textContent=state.xp.toLocaleString()+" XP · "+tn+" to next milestone";
   }else{
     const cur=getLevel(state.xp),nxt=getNextLevel(state.xp);
     document.getElementById("levelBadge").textContent="LVL "+cur.level;
     document.getElementById("levelName").textContent=cur.emoji+" "+cur.name;
-    document.getElementById("xpDisplay").textContent=nxt?state.xp+" / "+nxt.minXP+" XP":state.xp+" XP â€” MAX!";
+    document.getElementById("xpDisplay").textContent=nxt?state.xp+" / "+nxt.minXP+" XP":state.xp+" XP — MAX!";
   }
   document.getElementById("xpFill").style.width=getLevelProgress(state.xp)+"%";
-  document.getElementById("streakPill").textContent="ðŸ”¥ "+state.streak+" day streak";
+  document.getElementById("streakPill").textContent="🔥 "+state.streak+" day streak";
   applyLegendMode();
 }
 function renderEnergyButtons(){
@@ -758,7 +758,7 @@ function renderProgress(){
 function renderTasks(){
   const panel=document.getElementById("tasksPanel"),ft=getFilteredTasks();
   if(!ft.length){
-    let m='<div class="empty-state"><div class="empty-emoji">âœ¨</div><div class="empty-msg">No tasks here</div><div class="empty-sub">';
+    let m='<div class="empty-state"><div class="empty-emoji">✨</div><div class="empty-msg">No tasks here</div><div class="empty-sub">';
     m+=state.deletedTaskIds.length>0
       ?'<span style="color:var(--teal);cursor:pointer;text-decoration:underline;" onclick="restoreAllTasks()">Restore deleted tasks</span> or switch energy mode'
       :'Switch energy mode or add tasks in My Tasks';
@@ -773,20 +773,20 @@ function renderTasks(){
       const isC=!!t.custom,done=isDone(t),days=daysUntilReset(t),cls=isC?"custom-task-card":"task-card";
       const right=done
         ?(t.freq==="weekly"||t.freq==="monthly"
-          ?`<div class="reset-badge">â†» ${days}d</div>`
-          :'<div class="check-icon">âœ“</div>')
+          ?`<div class="reset-badge">↻ ${days}d</div>`
+          :'<div class="check-icon">✓</div>')
         :`<div class="task-xp-badge">+${t.xp} XP</div>`;
       const meta=done&&(t.freq==="weekly"||t.freq==="monthly")
-        ?` Â· <span style="color:var(--teal);font-size:10px;">resets in ${days} day${days===1?"":"s"}</span>`
+        ?` · <span style="color:var(--teal);font-size:10px;">resets in ${days} day${days===1?"":"s"}</span>`
         :"";
       html+=`<div class="${cls} ${done?"done":""}" id="task_${t.id}" onclick="completeTask('${t.id}')">
         <div class="task-icon-wrap ${t.energy}">${t.icon}</div>
         <div class="task-info">
           <div class="task-name">${t.name}${freqLabel(t.freq)}${isC?'<span class="custom-badge">MINE</span>':""}</div>
-          <div class="task-meta">${t.energy} energy Â· ${t.cat}${meta}</div>
+          <div class="task-meta">${t.energy} energy · ${t.cat}${meta}</div>
         </div>
         ${right}
-        ${!done?`<button class="delete-task-btn" onclick="${isC?"deleteCustomTask":"deleteBuiltinTask"}(event,'${t.id}')">âœ•</button>`:""}
+        ${!done?`<button class="delete-task-btn" onclick="${isC?"deleteCustomTask":"deleteBuiltinTask"}(event,'${t.id}')">✕</button>`:""}
       </div>`;
     });
   });
@@ -797,8 +797,8 @@ function renderEmergency(){
     const done=state.emergencyDone.includes(r.id);
     return `<button class="em-card ${done?"done":""}" style="background:${r.color}18;border:2px solid ${done?r.color+"50":r.color+"35"};color:${r.color};" onclick="completeEmergency('${r.id}')">
       <span class="em-icon">${r.icon}</span><span class="em-name">${r.name}</span>
-      <span class="em-time">â±ï¸ ${r.time}</span>
-      <span class="em-xp">${done?"âœ“ Done!":"+"+r.xp+" XP"}</span></button>`;
+      <span class="em-time">⏱️ ${r.time}</span>
+      <span class="em-xp">${done?"✓ Done!":"+"+r.xp+" XP"}</span></button>`;
   }).join("");
 }
 function renderCustomPanel(){
@@ -806,7 +806,7 @@ function renderCustomPanel(){
   document.getElementById("myTasksCount").textContent=ct.length+(ct.length===1?" task":" tasks");
   const list=document.getElementById("myTasksList");
   if(!ct.length){
-    list.innerHTML='<div class="empty-custom"><div class="empty-custom-icon">âœï¸</div><div class="empty-custom-msg">No custom tasks yet</div><div class="empty-custom-sub">Build your first one above!</div></div>';
+    list.innerHTML='<div class="empty-custom"><div class="empty-custom-icon">✏️</div><div class="empty-custom-msg">No custom tasks yet</div><div class="empty-custom-sub">Build your first one above!</div></div>';
     return;
   }
   list.innerHTML=ct.map(t=>{
@@ -815,13 +815,13 @@ function renderCustomPanel(){
       <div class="task-icon-wrap ${t.energy}">${t.icon}</div>
       <div class="task-info">
         <div class="task-name">${t.name}${freqLabel(t.freq||"daily")}</div>
-        <div class="task-meta">${t.energy} energy Â· ${t.cat} Â· +${t.xp} XP${done&&days>0?` Â· <span style="color:var(--teal);font-size:10px;">resets in ${days}d</span>`:""}</div>
+        <div class="task-meta">${t.energy} energy · ${t.cat} · +${t.xp} XP${done&&days>0?` · <span style="color:var(--teal);font-size:10px;">resets in ${days}d</span>`:""}</div>
       </div>
       ${done
-        ?(t.freq==="weekly"||t.freq==="monthly"?`<div class="reset-badge">â†» ${days}d</div>`:'<div class="check-icon">âœ“</div>')
+        ?(t.freq==="weekly"||t.freq==="monthly"?`<div class="reset-badge">↻ ${days}d</div>`:'<div class="check-icon">✓</div>')
         :`<div class="task-xp-badge">+${t.xp} XP</div>`
       }
-      <button class="delete-task-btn" onclick="deleteCustomTask(event,'${t.id}')">âœ•</button>
+      <button class="delete-task-btn" onclick="deleteCustomTask(event,'${t.id}')">✕</button>
     </div>`;
   }).join("");
 }
@@ -835,7 +835,7 @@ function renderBuilderCats(){
 }
 function renderAll(){renderHeader();renderEnergyButtons();renderProgress();renderTasks();renderEmergency();renderCustomPanel();}
 
-// â”€â”€ ACTIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── ACTIONS ───────────────────────────────────────────────────────────────────
 function setEnergy(e){state.energy=e;renderAll();saveState();}
 function switchTab(tab){
   ["tasks","emergency","custom"].forEach(t=>{
@@ -865,7 +865,7 @@ function completeTask(id){
   if(card)card.classList.add("completing");
   if(checkLegendMilestones(xpB,state.xp))return;
   if(newL.level>oldL.level){
-    showCelebration(task.xp,"LEVEL UP! "+newL.emoji+" "+newL.name+"!","You're unstoppable! ðŸš€",true);
+    showCelebration(task.xp,"LEVEL UP! "+newL.emoji+" "+newL.name+"!","You're unstoppable! 🚀",true);
   }else{
     showCelebration(task.xp,CEL_MESSAGES[Math.floor(Math.random()*CEL_MESSAGES.length)],null,false);
   }
@@ -873,15 +873,15 @@ function completeTask(id){
 function deleteBuiltinTask(e,id){
   e.stopPropagation();
   state.deletedTaskIds.push(Number(id));
-  saveState();renderAll();showToast("ðŸ—‘ï¸ Task hidden. Tap Restore to get it back.");
+  saveState();renderAll();showToast("🗑️ Task hidden. Tap Restore to get it back.");
 }
 function deleteCustomTask(e,id){
   e.stopPropagation();
   if(!confirm("Remove this custom task?"))return;
   state.customTasks=state.customTasks.filter(t=>String(t.id)!==String(id));
-  saveState();renderAll();showToast("ðŸ—‘ï¸ Task removed.");
+  saveState();renderAll();showToast("🗑️ Task removed.");
 }
-function restoreAllTasks(){state.deletedTaskIds=[];saveState();renderAll();showToast("âœ… All tasks restored!");}
+function restoreAllTasks(){state.deletedTaskIds=[];saveState();renderAll();showToast("✅ All tasks restored!");}
 function completeEmergency(id){
   if(state.emergencyDone.includes(id))return;
   const r=EMERGENCY_RESETS.find(e=>e.id===id);if(!r)return;
@@ -889,17 +889,17 @@ function completeEmergency(id){
   state.emergencyDone.push(id);state.xp+=r.xp;state.lastDate=new Date().toDateString();
   saveState();renderAll();
   if(checkLegendMilestones(xpB,state.xp))return;
-  showCelebration(r.xp,"Emergency handled! ðŸš€","One reset at a time. You've got this.",false);
+  showCelebration(r.xp,"Emergency handled! 🚀","One reset at a time. You've got this.",false);
 }
 function newDay(){
-  if(!confirm("Start a new day?\n\nâœ… Daily tasks will reset\nðŸ”„ Weekly & monthly tasks keep their schedule\nâ­ XP and streak are always safe!"))return;
+  if(!confirm("Start a new day?\n\n✅ Daily tasks will reset\n🔄 Weekly & monthly tasks keep their schedule\n⭐ XP and streak are always safe!"))return;
   state.tasks=state.tasks.map(t=>({...t,done:(t.freq==="daily"||!t.freq)?false:t.done}));
   state.customTasks=state.customTasks.map(t=>({...t,done:(t.freq==="daily"||!t.freq)?false:t.done}));
   state.emergencyDone=[];
-  saveState();renderAll();showToast("ðŸŒ™ New day! Daily tasks reset.");
+  saveState();renderAll();showToast("🌙 New day! Daily tasks reset.");
 }
 
-// â”€â”€ BUILDER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── BUILDER ───────────────────────────────────────────────────────────────────
 function pickEmoji(e){builderEmoji=e;document.getElementById("emojiCustom").value="";renderBuilderEmojis();}
 function onCustomEmoji(val){if(val.trim()){builderEmoji=val.trim();document.querySelectorAll(".emoji-pick").forEach(b=>b.classList.remove("selected"));}}
 function pickEnergy(e){
@@ -926,13 +926,13 @@ function addCustomTask(){
   document.getElementById("catCustomInput").value="";
   document.getElementById("xpSlider").value=10;
   document.getElementById("xpValDisplay").textContent="10 XP";
-  builderEmoji="ðŸŽ¯";builderEnergy="low";builderCat="Home";builderFreq="daily";
+  builderEmoji="🎯";builderEnergy="low";builderCat="Home";builderFreq="daily";
   renderBuilderEmojis();renderBuilderCats();pickEnergy("low");pickFreq("daily");
   document.getElementById("addTaskBtn").disabled=true;
-  showToast("âœ… Task added! Find it in Today's tab.");
+  showToast("✅ Task added! Find it in Today's tab.");
 }
 
-// â”€â”€ CELEBRATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── CELEBRATIONS ──────────────────────────────────────────────────────────────
 let celTimeout=null;
 function showCelebration(xp,msg,sub,isLevelUp){
   const o=document.getElementById("celebrationOverlay"),p=document.getElementById("celebrationPopup");
@@ -975,23 +975,23 @@ function showToast(msg){
   toastTimeout=setTimeout(()=>t.classList.remove("show"),2800);
 }
 
-// â”€â”€ STATS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── STATS ─────────────────────────────────────────────────────────────────────
 function openStats(){
   document.getElementById("statXP").textContent=state.xp.toLocaleString();
   document.getElementById("statStreak").textContent=state.streak;
-  document.getElementById("statLevel").textContent=isLegend()?"ðŸ‘‘":getLevel(state.xp).level;
+  document.getElementById("statLevel").textContent=isLegend()?"👑":getLevel(state.xp).level;
   const cur=getLevel(state.xp);
   const legendExtra=isLegend()?`<div class="lj-row current" style="border-color:rgba(255,215,0,0.5);background:rgba(255,215,0,0.08);">
-    <span class="lj-emoji">ðŸ‘‘</span>
-    <span class="lj-name" style="color:#ffd700;">â†’ Legend Mode â€” INFINITE</span>
+    <span class="lj-emoji">👑</span>
+    <span class="lj-name" style="color:#ffd700;">→ Legend Mode — INFINITE</span>
     <span class="lj-xp" style="color:#ffd700;">${state.xp.toLocaleString()} XP</span></div>`:"";
   document.getElementById("levelJourney").innerHTML=LEVELS.map(l=>{
     const iD=state.xp>=l.minXP&&l.level<cur.level, iC=l.level===cur.level&&!isLegend();
     return `<div class="lj-row ${iC?"current":iD?"done":""}">
       <span class="lj-emoji">${l.emoji}</span>
-      <span class="lj-name">${iC?"â†’ ":""}${l.name}</span>
+      <span class="lj-name">${iC?"→ ":""}${l.name}</span>
       <span class="lj-xp">${l.minXP} XP</span>
-      ${iD||isLegend()?"<span style='color:var(--teal);font-weight:900'>âœ“</span>":""}
+      ${iD||isLegend()?"<span style='color:var(--teal);font-weight:900'>✓</span>":""}
     </div>`;
   }).join("")+legendExtra;
   document.getElementById("statsOverlay").classList.remove("hidden");
@@ -1001,7 +1001,7 @@ function closeStats(e){
     document.getElementById("statsOverlay").classList.add("hidden");
 }
 
-// â”€â”€ INIT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── INIT ──────────────────────────────────────────────────────────────────────
 loadState();renderAll();pickTodayAffirmation();renderBuilderEmojis();renderBuilderCats();
 
 </script>
