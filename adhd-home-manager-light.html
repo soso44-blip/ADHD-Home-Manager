@@ -427,7 +427,7 @@
   <div class="task-panel" id="tasksPanel"></div>
 
   <div class="emergency-panel hidden" id="emergencyPanel">
-    <div class="em-intro"><strong>Paralysis? Pick ONE.</strong> Just one. No judgment. No pressure. A tiny win still counts.</div>
+    <div class="em-intro"><strong>Paralysis? Pick ONE task.</strong> Just one. A tiny win still counts.</div>
     <div class="em-grid" id="emGrid"></div>
   </div>
 
@@ -610,12 +610,12 @@ const TASK_TEMPLATES=[
 ];
 
 const EMERGENCY_RESETS=[
-  {id:"e1",name:"Reset Kitchen",  icon:"🍳",time:"15 min",xp:25,color:"#ff6eb4"},
-  {id:"e2",name:"Clear 5 Items",  icon:"🗑️",time:"2 min", xp:10,color:"#00e5c8"},
-  {id:"e3",name:"Shower + Reset", icon:"🚿",time:"15 min",xp:30,color:"#c77dff"},
-  {id:"e4",name:"Desk Rescue",    icon:"🖥️",time:"5 min", xp:15,color:"#ffd166"},
-  {id:"e5",name:"Bed Reset",      icon:"🛏️",time:"3 min", xp:10,color:"#74d7c4"},
-  {id:"e6",name:"Brain Dump",     icon:"📝",time:"5 min", xp:15,color:"#ff9a9a"},
+ { id:"e1", name:"RESET KITCHEN - Spend 15mins making it functional again: Dishes in the sink, wipe one surface, put things roughly where they belong. Done.", icon:"🍳", time:"15 min", xp:25, color:"#ff6eb4" },
+  { id:"e2", name:"CLEAR 5 ITEMS - Pick up 5 things that are out of place and put them where they belong", icon:"🗑️", time:"2 min", xp:10, color:"#00e5c8" },
+  { id:"e3", name:"SHOWER RESET - Shower, get dressed, brush teeth. It physically resets your brain state.", icon:"🚿", time:"15 min", xp:30, color:"#c77dff" },
+  { id:"e4", name:"DESK RESCUE - Clear your immediate work surface in 5 minutes. ", icon:"🖥️", time:"5 min", xp:15, color:"#ffd166" },
+  { id:"e5", name:"BED RESET -  A made bed makes the whole room feel calmer instantly.", icon:"🛏️", time:"3 min", xp:10, color:"#74d7c4" },
+  { id:"e6", name:"BRAIN DUMP - Write every thought, task, and worry that's in your head for 5 minutes.", icon:"📝", time:"5 min", xp:15, color:"#ff9a9a" },
 ];
 
 const LEGEND_MILESTONE_MSGS=[
