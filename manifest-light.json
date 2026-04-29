@@ -1,6 +1,6 @@
 {
   "name": "ADHD Home Manager",
-  "short_name": "ADHD Manager",
+  "short_name": "Chores Manager",
   "description": "A dopamine-friendly home task manager for ADHD brains",
   "start_url": "./adhd-light-final.html",
   "display": "standalone",
