@@ -1,6 +1,6 @@
 const CACHE = 'adhd-dark-v1';
 const ASSETS = [
-  './adhd-dark-final.html',
+  './adhd-home-manager-dark.html',
   'https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap',
   'https://fonts.gstatic.com/s/fredokaone/v14/k3kUo8kEI-tA1RRcTZGmTlHGCaen8wf-.woff2',
 ];
